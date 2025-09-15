@@ -1,0 +1,23 @@
+body, 
+html, 
+* {
+    font-size:  10px;
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+}
+.card {
+    width: 30%;
+    height: 500px;
+    background-color: azure;
+    margin: 20px 0 auto;
+
+}
+.container{
+    width: 90vw;
+    background-color: black;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
