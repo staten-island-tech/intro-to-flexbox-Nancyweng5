@@ -4,7 +4,7 @@ const products = [
     name: "Wanderer Impression Brooch",
     inStock: true,
     catagory: "accesories",
-    price: 49.9,
+    price: 49.90,
     link: "https://genshinfans.com/products/official-wanderer-impression-brooch",
   },
   {
@@ -12,7 +12,7 @@ const products = [
     name: "Klee Bomb Sling Water Bottle",
     inStock: true,
     catagory: "accesories",
-    price: 57.9,
+    price: 57.90,
     link: "https://genshinfans.com/products/official-klee-bomb-sling-water-bottle",
   },
   {
@@ -20,7 +20,7 @@ const products = [
     name: "Zhongli Impression Series Crystal Aromatherapy Gift Box",
     catagory: "accesories",
     inStock: false,
-    price: 129.9,
+    price: 129.90,
     link: "https://genshinfans.com/products/official-zhongli-crystal-aromatherapy-gift-box",
   },
   {
@@ -28,7 +28,7 @@ const products = [
     name: "Yae Miko Impression Bracelet/Necklace",
     catagory: "accesories",
     inStock: true,
-    price: 49.9,
+    price: 49.90,
     link: "https://genshinfans.com/products/official-miko-bracelet-necklace",
   },
   {
@@ -36,7 +36,7 @@ const products = [
     name: "The Statue of Her Excellency Raiden Shogun",
     catagory: "figures",
     inStock: true,
-    price: 99.9,
+    price: 99.90,
     link: "https://genshinfans.com/products/official-the-statue-of-her-excellency-raiden-shogun",
   },
   {
@@ -44,7 +44,7 @@ const products = [
     name: "Resplendent Feast Tartaglia Merchandise",
     catagory: "accesories",
     inStock: true,
-    price: 219.9,
+    price: 219.90,
     link: "https://genshinfans.com/products/genshin-resplendent-feast-tartaglia-merch",
   },
   {
@@ -52,7 +52,7 @@ const products = [
     name: "Furina Sweet Afternoon Ode Chibi Figure",
     catagory: "figures",
     inStock: false,
-    price: 109.9,
+    price: 109.90,
     link: "https://genshinfans.com/products/official-furina-chibi-figure",
   },
   {
@@ -60,7 +60,7 @@ const products = [
     name: "Kaedehara Kazuha Action Figure with Clothes and Accessories",
     catagory: "figures",
     inStock: false,
-    price: 169.9,
+    price: 169.90,
     link: "https://genshinfans.com/products/official-kazuha-action-figure-with-clothes",
   },
   {
@@ -68,7 +68,7 @@ const products = [
     name: "Neuvillette Afternoon Tea Cup Set",
     catagory: "accesories",
     inStock: true,
-    price: 89.9,
+    price: 89.90,
     link: "https://genshinfans.com/products/official-neuvillette-afternoon-tea-cup-set",
   },
   {
@@ -76,7 +76,7 @@ const products = [
     name: "Arlecchino Impression Crystal Aromatherapy Gift Box",
     catagory: "accesories",
     inStock: true,
-    price: 119.9,
+    price: 119.90,
     link: "https://genshinfans.com/products/official-arlecchino-crystal-aromatherapy-gift-box",
   },
   {
@@ -84,7 +84,7 @@ const products = [
     name: "Venti Impression Envelope Bag & Tote Bag",
     catagory: "clothing",
     inStock: true,
-    price: 114.9,
+    price: 114.90,
     link: "https://genshinfans.com/products/official-venti-clutch-tote-bag",
   },
   {
@@ -92,7 +92,7 @@ const products = [
     name: "Alhaitham Impression Travel Size Perfume Gift Set",
     catagory: "accesories",
     inStock: true,
-    price: 74.9,
+    price: 74.90,
     link: "https://genshinfans.com/products/official-alhaitham-travel-size-perfume-gift-set",
   },
   {
@@ -100,7 +100,7 @@ const products = [
     name: "Diluc Impression Messenger Bag",
     catagory: "clothing",
     inStock: true,
-    price: 111.9,
+    price: 111.90,
     link: "https://genshinfans.com/products/official-diluc-messenger-bag",
   },
   {
@@ -108,7 +108,7 @@ const products = [
     name: "Genshin Impact Xiao Vigilant Yaksha Ver. 1/7 Scale Figure",
     catagory: "figures",
     inStock: true,
-    price: 259.9,
+    price: 259.90,
     link: "https://genshinfans.com/products/official-xiao-vigilant-1-7-scale-figure",
   },
   {
@@ -116,7 +116,7 @@ const products = [
     name: "Hu Tao Chibi Happy Shake Figure Stand",
     catagory: "figures",
     inStock: false,
-    price: 29.9,
+    price: 29.90,
     link: "https://genshinfans.com/products/official-hu-tao-happy-shake-ornament",
   },
   {
@@ -124,7 +124,7 @@ const products = [
     name: "Nahida Impression Hairpin",
     catagory: "accesories",
     inStock: true,
-    price: 38.9,
+    price: 38.90,
     link: "https://genshinfans.com/products/official-merchandise-nahida-impression-hairpin",
   },
   {
@@ -132,7 +132,7 @@ const products = [
     name: "Genshin Impact Wriothesley Action Figure Doll",
     catagory: "figures",
     inStock: false,
-    price: 169.9,
+    price: 169.90,
     link: "https://genshinfans.com/products/official-wriothesley-action-figure",
   },
   {
@@ -140,7 +140,7 @@ const products = [
     name: "Genshin Impact Kinich Theme Impression Double Layer Short Necklace",
     catagory: "accesories",
     inStock: true,
-    price: 69.9,
+    price: 69.90,
     link: "https://genshinfans.com/products/official-kinich-double-layer-necklace",
   },
   {
@@ -148,7 +148,7 @@ const products = [
     name: "Genshin Impact Citlali Obsidian Opalstar Ver. 1/8 Scale Figure",
     catagory: "figures",
     inStock: false,
-    price: 109.9,
+    price: 109.90,
     link: "https://genshinfans.com/products/official-genshin-citlali-1-8-figure",
   },
   {
@@ -156,19 +156,18 @@ const products = [
     name: "Genshin Impact Albedo Theme Impression Brooch",
     catagory: "accesories",
     inStock: true,
-    price: 52.9,
+    price: 52.90,
     link: "https://genshinfans.com/products/official-albedo-theme-impression-brooch",
   },
 ];
 
 //create inject function
-function inject(item) {
+function inject(products) {
   const container = document.querySelector(".container");
-
   container.insertAdjacentHTML("afterbegin", `<div class="card">
-        <img src=${products.img}" alt="." />
+        <img src="${products.img}" alt="." />
         <h2>${products.name}</h2>
-        <h3>${products.price}</h3>
+        <h3>$${products.price}0</h3>
         <a
           ${products.link}
         >
@@ -187,6 +186,7 @@ function addToCard() {
   btnarray.forEach((btn) =>
     btn.addEventListerner("click", function (event) {
       console.log(event.target.textContent);
+      console.log(event.target.closest(".card").getAttribute("h2"))
     })
   );
 }
