@@ -69,6 +69,13 @@ a {
 }
 
 .cart {
-  text-align: center;
   margin-top: 10px;
+  background-color: #fffafa;
+  width: 400px;
+  height: 750px;
+  position: absolute;
+  right: 0;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }

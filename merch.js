@@ -169,7 +169,7 @@ function inject(products) {
         <h2>${products.name}</h2>
         <h3>$${products.price}0</h3>
         <a
-          ${products.link}
+           ${products.link}
         >
           <button>Purchase</button>
         </a>
@@ -181,10 +181,10 @@ products.forEach((product) => inject(product));
 //for every product we
 
 function addToCard() {
-  const buttons = document.querySelectorAll("button");
+  const buttons = document.querySelectorAll(".button");
   const btnarray = Array.from(buttons);
   btnarray.forEach((btn) =>
-    btn.addEventListerner("click", function (event) {
+    btn.addEventListener("click", function (event) {
       console.log(event.target.textContent);
       console.log(event.target.closest(".card").getAttribute("h2"))
     })
