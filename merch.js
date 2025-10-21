@@ -180,7 +180,7 @@ function inject(products) {
 products.forEach((product) => inject(product));
 //for every product we
 
-function addToCard() {
+function addToCart() {
   const buttons = document.querySelectorAll(".button");
   const btnarray = Array.from(buttons);
   btnarray.forEach((btn) =>
@@ -190,3 +190,7 @@ function addToCard() {
     })
   );
 }
+
+document.querySelector(".btn").addEventListener("click", function () {
+  document.querySelector("h1").textContent = "You clicked the button!";
+});

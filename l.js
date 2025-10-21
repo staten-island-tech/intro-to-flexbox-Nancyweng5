@@ -1,4 +1,4 @@
-const sneakers = [
+/* const sneakers = [
     {name : "Jordan 700s"}
     price = 1.
 ]
@@ -11,4 +11,8 @@ const genshin = [
 ]
 
 sneakers.forEach((genshin)=> makeCard(Genshin));
-function makeCard(item){}
+function makeCard(item){} */
+
+const number = [1, 2, 3, 4, 5];
+let x = 0
+while 
