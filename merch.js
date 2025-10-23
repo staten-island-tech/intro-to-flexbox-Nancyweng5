@@ -40,12 +40,12 @@ const products = [
     link: "https://genshinfans.com/products/official-the-statue-of-her-excellency-raiden-shogun",
   },
   {
-    img: "childe.webp",
-    name: "Resplendent Feast Tartaglia Merchandise",
+    img: "flins.webp",
+    name: "Genshin Impact Bracelet Flins",
     catagory: "accesories",
     inStock: true,
-    price: 219.90,
-    link: "https://genshinfans.com/products/genshin-resplendent-feast-tartaglia-merch",
+    price: 29.90,
+    link:"https://genshinfans.com/https://genshinfans.com/products/genshin-bracelet-flins-durin-columbina?_pos=3&_sid=58b85a98c&_ss=r&variant=50821949718824/genshin-resplendent-feast-tartaglia-merch",
   },
   {
     img: "ZT01_c02358e5-66ab-42ea-99ee-822358617b7e.webp",
@@ -181,16 +181,33 @@ products.forEach((product) => inject(product));
 //for every product we
 
 function addToCart() {
-  const buttons = document.querySelectorAll(".button");
+  const buttons = document.querySelectorAll("button");
   const btnarray = Array.from(buttons);
   btnarray.forEach((btn) =>
     btn.addEventListener("click", function (event) {
-      console.log(event.target.textContent);
-      console.log(event.target.closest(".card").getAttribute("h2"))
+      const name = event.target.closest(".card").querySelector("h2").textContent
+      const price = event.target.closest(".card").querySelector("h3").textContent
     })
   );
 }
 
-document.querySelector(".btn").addEventListener("click", function () {
-  document.querySelector("h1").textContent = "You clicked the button!";
-});
+function inject(product) {
+  const container = document.querySelector(".container");
+  container.insertAdjacentHTML("beforeend", `<div class="card">
+        <img src="${product.img}" alt="." />
+        <h2>${product.name}</h2>
+        <h3>$${product.price}0</h3>
+        <button>Purchase</button>
+     </div>`);
+}
+products.forEach((product) => inject(product));
+
+
+function filterByCatagory(catagory){
+    const display = document.getElementById("h2");
+    display.innerHTML = "";  //when there is nothing in the "", nothing will show up
+    const filterproduct = product.filter((product) => product.catagory === catagory);
+    console.log(filterproduct)
+}
+
+
