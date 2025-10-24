@@ -24,12 +24,15 @@ filterByGenre("Mystery");
 const cart [];
 
 function checkCart(prod){
-    const found = cart.find((cartItem) => cartItem.title === prod.title);
+    const found = cart.find((cartItem) => cartItem.title === cartProduct.title);
     if (found) {
         found.quantity += 1;
     } else {
-        cart.push(prod);
+        cart.push(cartproduct);
     }
 }
+checkCart(prod)
+checkCart(prod)
+console.log;
 
 //function addToCart()

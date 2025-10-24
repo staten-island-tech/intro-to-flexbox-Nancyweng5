@@ -187,19 +187,19 @@ function addToCart() {
     btn.addEventListener("click", function (event) {
       const name = event.target.closest(".card").querySelector("h2").textContent
       const price = event.target.closest(".card").querySelector("h3").textContent
+
+      const cart = document.querySelector(".cart");
+      cart.insertAdjacentHTML("beforeend",`<div class="cart">
+        <h2>Cart</h2>
+        <h4>${name} <h5 class = "price">${price}</h5></h4>      
+         </div>`
+      );
     })
   );
 }
+addToCart()
 
-function inject(product) {
-  const container = document.querySelector(".container");
-  container.insertAdjacentHTML("beforeend", `<div class="card">
-        <img src="${product.img}" alt="." />
-        <h2>${product.name}</h2>
-        <h3>$${product.price}0</h3>
-        <button>Purchase</button>
-     </div>`);
-}
+
 products.forEach((product) => inject(product));
 
 

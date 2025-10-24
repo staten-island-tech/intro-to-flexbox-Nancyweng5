@@ -78,4 +78,16 @@ a {
   margin: auto;
   margin-bottom: 50px;
   box-shadow: 5px 5px 10px 2px #b8aeae;
+  padding: 2px;
+  line-height: 2px;
+}
+h4 {
+  margin: 30px;
+  font-size: x-large;
+  background-color: #fffafa;
+}
+.price {
+  font-size: large;
+  margin: 20px;
+  margin-top: 1px;
 }
