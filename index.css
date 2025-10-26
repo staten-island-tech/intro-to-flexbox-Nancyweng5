@@ -70,24 +70,35 @@ a {
 
 .cart {
   margin-top: 100px;
-  margin-left: 200px;
+  margin: auto;
   background-color: #fffafa;
   width: 1000px;
-  height: 500px;
+  min-height: 200px;
   right: 0;
-  margin: auto;
   margin-bottom: 50px;
   box-shadow: 5px 5px 10px 2px #b8aeae;
   padding: 2px;
-  line-height: 2px;
+  border-radius: 5px;
+  overflow: visible;
 }
-h4 {
-  margin: 30px;
-  font-size: x-large;
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
   background-color: #fffafa;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dedede;
 }
-.price {
-  font-size: large;
-  margin: 20px;
-  margin-top: 1px;
+
+.cart-name{
+  font-size: 20px;
+  background-color: #fffafa;
+  margin-left: 10px;
+}
+.cart-price{
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: #fffafa;
+  margin-right: 10px;
 }

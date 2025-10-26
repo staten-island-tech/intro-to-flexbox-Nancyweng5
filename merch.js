@@ -165,13 +165,13 @@ const products = [
 function inject(products) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML("afterbegin", `<div class="card">
-        <img src="${products.img}" alt="." />
+        <img src="${products.img}" alt="${products.name}" />
         <h2>${products.name}</h2>
         <h3>$${products.price}0</h3>
         <a
            ${products.link}
         >
-          <button>Purchase</button>
+          <button class = "cart-btn">Purchase</button>
         </a>
       </div>`);
   //query the container
@@ -181,26 +181,31 @@ products.forEach((product) => inject(product));
 //for every product we
 
 function addToCart() {
-  const buttons = document.querySelectorAll("button");
-  const btnarray = Array.from(buttons);
-  btnarray.forEach((btn) =>
+  const buttons = document.querySelectorAll(".cart-btn");
+  buttons.forEach((btn) =>
     btn.addEventListener("click", function (event) {
       const name = event.target.closest(".card").querySelector("h2").textContent
       const price = event.target.closest(".card").querySelector("h3").textContent
-
       const cart = document.querySelector(".cart");
-      cart.insertAdjacentHTML("beforeend",`<div class="cart">
-        <h2>Cart</h2>
-        <h4>${name} <h5 class = "price">${price}</h5></h4>      
+      cart.insertAdjacentHTML("beforeend",`<div class="cart-item">
+        <span class = "cart-name">${name}</span> 
+        <span class = "cart-price"> ${price}</span>
          </div>`
       );
+      total += price;
+      const totalDisplay = document.querySelector(".total");
+      if (!totalDisplay) {
+        cart.insertAdjacentHTML("beforeend", `<h3 class="total">Total: $${total}</h3>`);
+      } else {
+        totalDisplay.textContent = "Total: $" + total;
+      }
     })
   );
 }
 addToCart()
 
 
-products.forEach((product) => inject(product));
+/* products.forEach((product) => inject(product));
 
 
 function filterByCatagory(catagory){
@@ -208,6 +213,6 @@ function filterByCatagory(catagory){
     display.innerHTML = "";  //when there is nothing in the "", nothing will show up
     const filterproduct = product.filter((product) => product.catagory === catagory);
     console.log(filterproduct)
-}
+} */
 
 
