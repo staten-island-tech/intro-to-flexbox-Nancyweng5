@@ -54,7 +54,7 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-button {
+.cart-btn {
   text-align: center;
   font-size: 20px;
   background-color: #efd7d9;
@@ -91,14 +91,29 @@ a {
   border-bottom: 2px solid #dedede;
 }
 
-.cart-name{
+.cart-name {
   font-size: 20px;
   background-color: #fffafa;
   margin-left: 10px;
 }
-.cart-price{
+.cart-price {
   margin-left: 10px;
   font-size: 20px;
   background-color: #fffafa;
   margin-right: 10px;
+}
+
+.filter-container {
+  height: 100px;
+  width: 1200px;
+  margin: auto;
+  text-decoration: none;
+}
+.filter-item {
+  font-size: 30px;
+  margin-left: 130px;
+  margin-top: 10px;
+  background-color: #d2c6c6;
+  align-self: center;
+  border-radius: 5px;
 }
