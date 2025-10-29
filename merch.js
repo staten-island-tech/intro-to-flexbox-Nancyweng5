@@ -212,10 +212,18 @@ addToCart();
 products.forEach((product) => inject(product));
 
 
-function filterByCatagory(catagory){
-    const filter = document.querySelector(".filter-container")
-    display.innerHTML = "";  //when there is nothing in the "", nothing will show up
-    const filterproduct = product.filter((product) => product.catagory === catagory);
-    console.log(filterproduct)
+function filterByCategory(category){
+    const filteritem = document.querySelectorAll(".filter-item")
+    filteritem.forEach((btn)=>
+      btn.addEventListener("click", function (event){
+      const categoryItem = event.target.closest(".filter-item")
+      products.filter((products) => products.category === category)
+      console.log(categoryItem)
+    }))
 } 
-filterByCatagory()
+filterByCategory(category)
+
+
+/* 
+    display.innerHTML = "";  //when there is nothing in the "", nothing will show up */
+/*         const filterproduct = product.filter((product) => product.catagory === catagory); */
