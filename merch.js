@@ -214,22 +214,33 @@ function addToCart() {
 addToCart();
 
 
-function filterByCategory(category) {
+function filterByCategory() {
   const filteritem = document.querySelectorAll(".filter-item");
-  filteritem.forEach((btn) =>
+  const container = document.querySelector(".container");
+  filteritem.forEach((btn) => {
     btn.addEventListener("click", function (event) {
-      const categoryItem = event.target.closest(".filter-item");
-      products.filter((products) => products.category === category);
-      if (filteritem === `${products.category}`) {
-        filteritem.insertAdjacentHTML(
-
-        );
+      container.innerHTML = "";
+      const category = event.target.textContent.trim().toLowerCase();
+      let filtered = products;
+      if (category === "accesories"){
+        filtered = products.filter((products) => products.category === "accesories");
+      }  
+      if (category === "figures"){
+        filtered = products.filter((products) => products.category === "figures");
       }
-    })
-  );
-}
-filterByCategory();
+      if (category === "clothing"){
+        filtered = products.filter((products) => products.category === "clothing");
+      }
+      if (category === "inStock"){
+        filtered = products.filter((products) => products.inStock);
+      }
 
+      filtered.forEach((products) => inject(products));
+      addToCart(); 
+    })}
+  );
+} 
+filterByCategory()
 /* 
     display.innerHTML = "";  //when there is nothing in the "", nothing will show up */
 /*         const filterproduct = product.filter((product) => product.catagory === catagory); */
