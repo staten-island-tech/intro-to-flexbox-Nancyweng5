@@ -122,3 +122,6 @@ a {
   height: 50px;
   width: 140px;
 }
+button.hover {
+  cursor: pointer;
+}
