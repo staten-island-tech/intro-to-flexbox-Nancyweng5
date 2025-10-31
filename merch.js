@@ -184,20 +184,18 @@ products.forEach((product) => inject(product));
 //for every product we
 let total = 0;
 
+document.querySelector(".cart").insertAdjacentHTML("beforeend", `<h3 class="total">Total: $0.00</h3>`);
+
 function addToCart() {
   const buttons = document.querySelectorAll(".cart-btn");
   const cart = document.querySelector(".cart");
-
-  cart.insertAdjacentHTML("beforeend", `<h3 class="total">Total: $0.00</h3>`);
   const totalPrice = document.querySelector(".total");
   buttons.forEach((btn) =>
     btn.addEventListener("click", function (event) {
       const name = event.target
         .closest(".card")
-        .querySelector("h2").textContent;
-      const price = event.target
-        .closest(".card")
-        .querySelector("h3").textContent;
+        .querySelector("h2").innerText;
+      const price = event.target.closest(".card").querySelector("h3").textContent;
       const prices = parseFloat(price.replace("$", ""));
       cart.insertAdjacentHTML(
         "beforeend",
@@ -207,7 +205,7 @@ function addToCart() {
          </div>`
       );
       total += prices;
-      totalPrice.textContent = `Total : $${total.toFixed(2)}`;
+      totalPrice.innerText = `Total : $${total.toFixed(2)}`;
     })
   );
 }
